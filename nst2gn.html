@@ -1,102 +1,127 @@
-<h1 id=ujjawal-kumar>Ujjawal Kumar</h1>
-<h2 id=-rna-structure-in-health-and-disease-investigation-of-snorna-clusters-in-the-imprinted-dlk1-dio3-and-snrpn-regions-and-their-role-in-splicing-><strong>RNA structure in health and disease - investigation of snoRNA clusters in the imprinted Dlk1-Dio3 and Snrpn regions and their role in splicing</strong></h2>
+<h1 id="ujjawal-kumar">Ujjawal Kumar</h1>
+<h2><span style="text-decoration: underline;">Abstract</span></h2>
+<p class="p1">The epigenetic phenomenon of genomic imprinting leads to specific genes being expressed in a parent-specific manner. Imprinted genes (IGs) have key roles in placental and embryonic development as well as an emerging role in brain development and function. The imprinted Dlk1-Dio3 region contains two maternally expressed small nucleolar RNA (snoRNA) clusters, SNORD113 and SNORD114, containing nine and thirty-one copies respectively (Rocha et al., 2008). Human individuals with disruptions in this conserved region display growth retardation and facial dysmorphism (Kagami et al., 2008).</p>
+<p class="p1">Deletion of the related SNORD116 cluster (paternally expressed) in the Snrpn imprinted region has been shown to be a direct cause of Prader-Willi syndrome (PWS) and postnatal growth retardation, (PNGR), (Sahoo et al., 2008; Skryabin et al., 2007). However, little is known about the mechanism of action of these snoRNAs. Using open-source computational tools, I will model the snoRNA 2D and 3D structures of these regions (SimRNA &ndash; Boniecki et al., 2016; ViennaRNA Web Services &ndash; Gruber et al., 2008; Vienna RNA &ndash; Lorenz et al., 2011). Transcribed as a precursor long non-coding RNA, Rian/MEG8, the C/D box motif-containing snoRNAs of Dlk1-Dio3 have been shown to be directed by genomic imprinting and show brain-specific expression, unusually for snoRNAs (Cavaill&eacute; et al., 2000; Rogelj, 2006).</p>
+<h2 id="-rna-structure-in-health-and-disease-investigation-of-snorna-clusters-in-the-imprinted-dlk1-dio3-and-snrpn-regions-and-their-role-in-splicing-"><span style="text-decoration: underline;"><strong>RNA structure in health and disease - investigation of snoRNA clusters in the imprinted Dlk1-Dio3 and Snrpn regions and their role in splicing</strong></span></h2>
 <ol>
-<li><h4 id=retrieved-sequences-https-github-com-afs-part-ii-projects-ujjawal_kumar-blob-main-spliceosomal-20snrnas-spliceosomal-20snrnas-20seqs-fasta-in-fasta-format-from-rnacentral-https-rnacentral-org-for-the-spliceosomal-snrnas-of-the-major-spliceosome-components-u1-u2-u4-u5-and-u6>Retrieved <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/Spliceosomal%20snRNAs%20Seqs.fasta>sequences</a> in .fasta format from <a href=https://rnacentral.org/>RNAcentral</a> for the spliceosomal snRNAs of the major spliceosome components: U1, U2, U4, U5 and U6</h4>
+<li>
+<h4 id="retrieved-sequences-https-github-com-afs-part-ii-projects-ujjawal_kumar-blob-main-spliceosomal-20snrnas-spliceosomal-20snrnas-20seqs-fasta-in-fasta-format-from-rnacentral-https-rnacentral-org-for-the-spliceosomal-snrnas-of-the-major-spliceosome-components-u1-u2-u4-u5-and-u6">Retrieved <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/Spliceosomal%20snRNAs%20Seqs.fasta">sequences</a> in .fasta format from <a href="https://rnacentral.org/">RNAcentral</a> for the spliceosomal snRNAs of the major spliceosome components: U1, U2, U4, U5 and U6</h4>
 </li>
-<li><h4 id=spliceosomal-snrnas-local-pairwise-sequence-alignment>Spliceosomal snRNAs - Local Pairwise Sequence Alignment</h4>
+<li>
+<h4 id="spliceosomal-snrnas-local-pairwise-sequence-alignment">Spliceosomal snRNAs - Local Pairwise Sequence Alignment</h4>
 <ul>
 <li>Performed on the spliceosomal snRNA sequences previously obtained in 1.</li>
-<li>Performed using the Smith-Waterman algorithm, via the <a href=https://www.ebi.ac.uk/Tools/psa/emboss_water>EBI site</a>.</li>
-<li><a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Sequence%20Alignments>Results</a></li>
+<li>Performed using the Smith-Waterman algorithm, via the <a href="https://www.ebi.ac.uk/Tools/psa/emboss_water">EBI site</a>.</li>
+<li><a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Sequence%20Alignments">Results</a></li>
 <li>This provided identity values for each pair of snRNAs analysed - will be used to construct an identity matrix</li>
-<li>Identity values tabulated in <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Sequences%20Similarity.csv>.csv format</a></li>
+<li>Identity values tabulated in <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Sequences%20Similarity.csv">.csv format</a></li>
 <li>These .csv files were uploaded to the CTR-RStudio and read using RStudio</li>
-<li>Plotted identity values from the matrices to obtain <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Heatmaps/plot.dmat>heatmaps using plot.dmat</a></li>
-<li>Replotted identity values using ComplexHeatmaps to obtain both <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Heatmaps/ComplexHeatmap/Clustered%20vs%20UnClustered%20Heatmaps.md>clustered and non clustered heatmaps</a> using another <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/R%20Scripts/Clustered%20Heatmaps.R>R script</a></li>
+<li>Plotted identity values from the matrices to obtain <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Heatmaps/plot.dmat">heatmaps using plot.dmat</a></li>
+<li>Replotted identity values using ComplexHeatmaps to obtain both <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Heatmaps/ComplexHeatmap/Clustered%20vs%20UnClustered%20Heatmaps.md">clustered and non clustered heatmaps</a> using another <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/R%20Scripts/Clustered%20Heatmaps.R">R script</a></li>
 </ul>
 </li>
-<li><h4 id=spliceosomal-snrnas-2d-structural-work>Spliceosomal snRNAs - 2D Structural Work</h4>
+<li>
+<h4 id="spliceosomal-snrnas-2d-structural-work">Spliceosomal snRNAs - 2D Structural Work</h4>
 <ul>
-<li>.fasta sequence files for the spliceosomal snRNAs were run on the <a href=http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi>RNAfold server</a>, part of the ViennaRNA Web Server</li>
-<li><a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAfold%20Outputs.md>Results</a></li>
-<li>Obtained the <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/MFE%20Structures.md>MFE (minimum free energy) structures</a> in Vienna (dot/bracket) format.</li>
-<li>Additionally, the <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/Centroid%20Structures.md>centroid structures</a> were obtained (also in Vienna format).</li>
-<li>foRNA was used on the MFE structures to obtain <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/2D%20Spliceosomal%20snRNA%20Structures.md>high quality structural figures</a>.</li>
-<li>Structural similarity modelling for the various combinations of the spliceosomal snRNAs (as before) was carried out using the <a href=http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/SCA.cgi>RNA distance web server</a>.</li>
-<li>The results were used to construct a <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAdistanceWeb%20Outputs/2D%20Structures%20Similarity.csv>structural similarity matrix</a></li>
-<li>As before, these were read and <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAdistanceWeb%20Outputs/Heatmaps/ComplexHeatmap/Alternative%20Colours/Structural%20Similarity%20Clustered%20Matrix%20All%20x%20All.png>a clustered heatmap</a> was plotted using ComplexHeatmap. I adjusted the code so that the heatmap would be automatically exported as a png image file, incorporating some other aesthetic adjustments</li>
-<li><a href=https://rth.dk/resources/foldalign/server/index.html>FoldAlign</a> was used in order to obtain common 2D elements between the spliceosomal snRNA sequences.</li>
-<li>Results are in the format of <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Spliceosomal%20snRNAs/2D%20Structures/FoldAlign%20.col%20Outputs>.col files</a></li>
+<li>.fasta sequence files for the spliceosomal snRNAs were run on the <a href="http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi">RNAfold server</a>, part of the ViennaRNA Web Server</li>
+<li><a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAfold%20Outputs.md">Results</a></li>
+<li>Obtained the <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/MFE%20Structures.md">MFE (minimum free energy) structures</a> in Vienna (dot/bracket) format.</li>
+<li>Additionally, the <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/Centroid%20Structures.md">centroid structures</a> were obtained (also in Vienna format).</li>
+<li>foRNA was used on the MFE structures to obtain <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/2D%20Spliceosomal%20snRNA%20Structures.md">high quality structural figures</a>.</li>
+<li>Structural similarity modelling for the various combinations of the spliceosomal snRNAs (as before) was carried out using the <a href="http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/SCA.cgi">RNA distance web server</a>.</li>
+<li>The results were used to construct a <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAdistanceWeb%20Outputs/2D%20Structures%20Similarity.csv">structural similarity matrix</a></li>
+<li>As before, these were read and <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAdistanceWeb%20Outputs/Heatmaps/ComplexHeatmap/Alternative%20Colours/Structural%20Similarity%20Clustered%20Matrix%20All%20x%20All.png">a clustered heatmap</a> was plotted using ComplexHeatmap. I adjusted the code so that the heatmap would be automatically exported as a png image file, incorporating some other aesthetic adjustments</li>
+<li><a href="https://rth.dk/resources/foldalign/server/index.html">FoldAlign</a> was used in order to obtain common 2D elements between the spliceosomal snRNA sequences.</li>
+<li>Results are in the format of <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Spliceosomal%20snRNAs/2D%20Structures/FoldAlign%20.col%20Outputs">.col files</a></li>
 </ul>
 </li>
-<li><h4 id=spliceosomal-snrnas-x-snornas>Spliceosomal snRNAs x snoRNAs</h4>
+<li>
+<h4 id="spliceosomal-snrnas-x-snornas">Spliceosomal snRNAs x snoRNAs</h4>
 <ul>
-<li><p>An <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/R%20Scripts/Sequence%20Alignment%20Script.R>R script</a> was written using PairwiseAlignment (part of <code>Biostrings</code>) in order to carry out local pairwise alignment using fasta files.</p>
+<li>
+<p>An <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/R%20Scripts/Sequence%20Alignment%20Script.R">R script</a> was written using PairwiseAlignment (part of <code>Biostrings</code>) in order to carry out local pairwise alignment using fasta files.</p>
 </li>
-<li><p>I tested this script using the Spliceosomal snRNA Sequences.fasta as this allowed the results to be compared to the EBI Outputs to verify. This will be especially useful in the project to speed up comparison of snoRNAs to the spliceosomal snRNAs, as there are a large number of combinations. The script was successful in carrying out the sequence alignments.</p>
+<li>
+<p>I tested this script using the Spliceosomal snRNA Sequences.fasta as this allowed the results to be compared to the EBI Outputs to verify. This will be especially useful in the project to speed up comparison of snoRNAs to the spliceosomal snRNAs, as there are a large number of combinations. The script was successful in carrying out the sequence alignments.</p>
 </li>
-<li><p><a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs/Sequences>snoRNA sequences</a> were obtained, and <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs/Sequences/DNA2RNA>converted to RNA format</a> (for comparison to the spliceosomal snRNAs) using <code>DNA2RNA</code> (part of the <code>FastaUtils</code> R package)</p>
-<pre><code class=lang-R><span class=hljs-function><span class=hljs-title>DNA2RNA</span><span class=hljs-params>(file=<span class=hljs-string>snoRNAs/snoRNA Seqs/SNORD113_hs.fasta</span>, out=<span class=hljs-string>snoRNAs/snoRNA Seqs/SNORD113_hs.rna.fasta</span>)</span></span>
+<li>
+<p><a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs/Sequences">snoRNA sequences</a> were obtained, and <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs/Sequences/DNA2RNA">converted to RNA format</a> (for comparison to the spliceosomal snRNAs) using <code>DNA2RNA</code> (part of the <code>FastaUtils</code> R package)</p>
+<pre><code class="lang-R"><span class="hljs-function"><span class="hljs-title">DNA2RNA</span><span class="hljs-params">(file=<span class="hljs-string">snoRNAs/snoRNA Seqs/SNORD113_hs.fasta</span>, out=<span class="hljs-string">snoRNAs/snoRNA Seqs/SNORD113_hs.rna.fasta</span>)</span></span>
 </code></pre>
 </li>
-<li><p><a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Sequence%20Alignments>Pairwise sequence alignments</a> were set up between the individual spliceosomal snRNAs and the SNORD clusters of the respective species using a new script.</p>
+<li>
+<p><a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Sequence%20Alignments">Pairwise sequence alignments</a> were set up between the individual spliceosomal snRNAs and the SNORD clusters of the respective species using a new script.</p>
 </li>
-<li><p>These pairwise sequence alignments were run for both human and mouse, and <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices>identity matrices</a> were obtained.</p>
+<li>
+<p>These pairwise sequence alignments were run for both human and mouse, and <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices">identity matrices</a> were obtained.</p>
 </li>
-<li><p>Using these identity matrices, overall sequence similarity matrices were obtained, grouped by the relevant imprinted region (<a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices/Sequences%20Similarity%20Human%20Dlk1-Dio3.csv>human Dlk1-Dio3</a>, <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices/Sequences%20Similarity%20Human%20Snrpn.csv>human Snprn</a> and <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices/Sequences%20Similarity%20Mouse%20Snrpn.csv>mouse Snrpn</a>), to obtain new similarity matrices, and <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Heatmaps>heatmaps</a> were thus plotted</p>
+<li>
+<p>Using these identity matrices, overall sequence similarity matrices were obtained, grouped by the relevant imprinted region (<a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices/Sequences%20Similarity%20Human%20Dlk1-Dio3.csv">human Dlk1-Dio3</a>, <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices/Sequences%20Similarity%20Human%20Snrpn.csv">human Snprn</a> and <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Identity%20Matrices/Sequences%20Similarity%20Mouse%20Snrpn.csv">mouse Snrpn</a>), to obtain new similarity matrices, and <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/Local%20Sequence%20Alignments/Heatmaps">heatmaps</a> were thus plotted</p>
 </li>
-<li><p>Another <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/R%20Scripts/RNADistance%20-%20sno%20x%20splice%202D%20Similarity.R>R script</a> written to use RNADistance on the spliceosomal snRNA sequences to calculate 2D structural distances</p>
+<li>
+<p>Another <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/R%20Scripts/RNADistance%20-%20sno%20x%20splice%202D%20Similarity.R">R script</a> written to use RNADistance on the spliceosomal snRNA sequences to calculate 2D structural distances</p>
 </li>
-<li><p>New matrices, and heatmaps (using ComplexHeatmap) were obtained.</p>
+<li>
+<p>New matrices, and heatmaps (using ComplexHeatmap) were obtained.</p>
 </li>
-<li><p>Now using the command line to run RNAfold, and RNAdistance (<a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAdistance%20spliceosomal%20RNAs%20Command%20Line.sh>code</a>), I obtained distance matrices for the 2D structures using the snoRNAs vs spliceosomal snRNA pairwise combinations set up earlier.</p>
-<pre><code class=lang-bash>RNAfold -T37 &lt; sno<span class=hljs-string>\</span> x<span class=hljs-string>\</span> Spliceosomal/Pairwise<span class=hljs-string>\</span> Combinations/hU4<span class=hljs-string>\</span> x<span class=hljs-string>\</span> hSNORD113.fasta | RNAdistance -Xm
+<li>
+<p>Now using the command line to run RNAfold, and RNAdistance (<a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Spliceosomal%20snRNAs/2D%20Structures/RNAdistance%20spliceosomal%20RNAs%20Command%20Line.sh">code</a>), I obtained distance matrices for the 2D structures using the snoRNAs vs spliceosomal snRNA pairwise combinations set up earlier.</p>
+<pre><code class="lang-bash">RNAfold -T37 &lt; sno<span class="hljs-string">\</span> x<span class="hljs-string">\</span> Spliceosomal/Pairwise<span class="hljs-string">\</span> Combinations/hU4<span class="hljs-string">\</span> x<span class="hljs-string">\</span> hSNORD113.fasta | RNAdistance -Xm
 </code></pre>
 </li>
-<li><p>I then collated all the distance values into <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Similarity%20Matrices>distance matrices</a>, grouped with respect to the relevant imprinted region (human <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/2D%20Distance%20Human%20Dlk1-Dio3.csv>Dlk1-Dio3</a>, <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/2D%20Distance%20Human%20Snrpn.csv>Snrpn</a> and mouse <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/2D%20Distance%20Mouse%20Snrpn.csv>Snrpn</a>), plotting <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Heatmaps>heatmaps</a>.</p>
+<li>
+<p>I then collated all the distance values into <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Similarity%20Matrices">distance matrices</a>, grouped with respect to the relevant imprinted region (human <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/2D%20Distance%20Human%20Dlk1-Dio3.csv">Dlk1-Dio3</a>, <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/2D%20Distance%20Human%20Snrpn.csv">Snrpn</a> and mouse <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/2D%20Distance%20Mouse%20Snrpn.csv">Snrpn</a>), plotting <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Heatmaps">heatmaps</a>.</p>
 </li>
 </ul>
 </li>
-<li><h4 id=searching-for-common-elements-between-snornas-and-spliceosomal-snrnas>Searching for Common Elements between snoRNAs and Spliceosomal snRNAs</h4>
+<li>
+<h4 id="searching-for-common-elements-between-snornas-and-spliceosomal-snrnas">Searching for Common Elements between snoRNAs and Spliceosomal snRNAs</h4>
 <ul>
-<li><p>Using Foldalign, which I had previously used as a web server, I proceeded to search for common structural elements between indvidual snoRNAs and the U4 spliceosomal snRNA, as this has been shown to be the key regulator of the major spliceosome.</p>
+<li>
+<p>Using Foldalign, which I had previously used as a web server, I proceeded to search for common structural elements between indvidual snoRNAs and the U4 spliceosomal snRNA, as this has been shown to be the key regulator of the major spliceosome.</p>
 </li>
-<li><p>First, the snoRNA sequences were separated into <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/Sequences/All%20snoRNAs>individual snoRNA sequences</a></p>
+<li>
+<p>First, the snoRNA sequences were separated into <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/Sequences/All%20snoRNAs">individual snoRNA sequences</a></p>
 </li>
-<li><p>Next, Foldalign was run to compare the U4 spliceosomal snRNA to the individual snoRNAs of the clusters using this code, which outputs a list of hits for each combination:</p>
-<pre><code class=lang-bash>cd ~/U4<span class=hljs-symbol>\ </span>x<span class=hljs-symbol>\ </span>snoRNAs/Sequences/
+<li>
+<p>Next, Foldalign was run to compare the U4 spliceosomal snRNA to the individual snoRNAs of the clusters using this code, which outputs a list of hits for each combination:</p>
+<pre><code class="lang-bash">cd ~/U4<span class="hljs-symbol">\ </span>x<span class="hljs-symbol">\ </span>snoRNAs/Sequences/
 
-foldalign -plot_score hU4.fasta hSNORD113_1.fasta | locateHits &gt; ~/U4<span class=hljs-symbol>\ </span>x<span class=hljs-symbol>\ </span>snoRNAs/Hit<span class=hljs-symbol>\ </span>List<span class=hljs-symbol>\ </span>hU4_hSNORD113/hU4_hSNORD113_01.txt
+foldalign -plot_score hU4.fasta hSNORD113_1.fasta | locateHits &gt; ~/U4<span class="hljs-symbol">\ </span>x<span class="hljs-symbol">\ </span>snoRNAs/Hit<span class="hljs-symbol">\ </span>List<span class="hljs-symbol">\ </span>hU4_hSNORD113/hU4_hSNORD113_01.txt
 </code></pre>
 </li>
-<li><p>For each SNORD cluster&#39;s hit lists, a &quot;<a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists>filtered hit list</a>&quot; was created, of all the hits with a p score of less than 1.000 - a collated form of these lists (<a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Filtered%20Hits%20hU4_ALL_hSNORDs.csv>human</a> and <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Filtered%20Hits%20mU4_ALL_mSNORDs.csv>mouse</a>) will then be used to calculate the mean p score for the top 5 hits of an individual snoRNA - separate lists (<a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Candidates%20w%20means%20hU4_ALL_hSNORDs.csv>human</a> and <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Candidates%20w%20means%20mU4_ALL_mSNORDs.csv>mouse</a>) were made of the mean scores of the top 5 hits.</p>
+<li>
+<p>For each SNORD cluster's hit lists, a "<a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists">filtered hit list</a>" was created, of all the hits with a p score of less than 1.000 - a collated form of these lists (<a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Filtered%20Hits%20hU4_ALL_hSNORDs.csv">human</a> and <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Filtered%20Hits%20mU4_ALL_mSNORDs.csv">mouse</a>) will then be used to calculate the mean p score for the top 5 hits of an individual snoRNA - separate lists (<a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Candidates%20w%20means%20hU4_ALL_hSNORDs.csv">human</a> and <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/snoRNAs%20x%20Spliceosomal%20snRNAs/2D%20Structures/Foldalign/U4%20x%20snoRNAs/Filtered%20Hit%20Lists/Candidates%20w%20means%20mU4_ALL_mSNORDs.csv">mouse</a>) were made of the mean scores of the top 5 hits.</p>
 </li>
-<li><p>The 10 snoRNAs with the lowest means are the candidate snoRNAs that will be further analysed in 3D modelling, as these are those snoRNAs with most similarity to the U4 spliceosomal snRNA.</p>
+<li>
+<p>The 10 snoRNAs with the lowest means are the candidate snoRNAs that will be further analysed in 3D modelling, as these are those snoRNAs with most similarity to the U4 spliceosomal snRNA.</p>
 </li>
 </ul>
 </li>
-<li><h4 id=duplex-formation-prediction>Duplex Formation Prediction</h4>
+<li>
+<h4 id="duplex-formation-prediction">Duplex Formation Prediction</h4>
 <ul>
-<li><a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Duplex%20Formation/Code>RNAcofold</a> was used to predict duplexes, as well as their ∆G of formation (binding)</li>
-<li><a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Duplex%20Formation/Predicted%20Duplexes>Predicted duplexes&#39; structures</a></li>
-<li><a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Duplex%20Formation/%E2%88%86G%20of%20Duplex%20Formation%20Graphs.md>Graphs</a> representing ∆G of duplex formation for candidate snoRNAs with U4, U5, and U6 spliceosomal snRNAs.</li>
+<li><a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Duplex%20Formation/Code">RNAcofold</a> was used to predict duplexes, as well as their ∆G of formation (binding)</li>
+<li><a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/tree/main/Duplex%20Formation/Predicted%20Duplexes">Predicted duplexes' structures</a></li>
+<li><a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/Duplex%20Formation/%E2%88%86G%20of%20Duplex%20Formation%20Graphs.md">Graphs</a> representing ∆G of duplex formation for candidate snoRNAs with U4, U5, and U6 spliceosomal snRNAs.</li>
 </ul>
 </li>
-<li><h4 id=3d-structure-prediction>3D Structure Prediction</h4>
+<li>
+<h4 id="3d-structure-prediction">3D Structure Prediction</h4>
 <ul>
-<li>Candidate snoRNA secondary structures predicted using <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/RNAfold%20Candidate%20snoRNAs.sh>RNAfold</a></li>
-<li>Spliceosomal snRNAs&#39; secondary structures predicted using <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/RNAfold%20Spliceosomal%20snRNAs.sh>RNAfold</a></li>
-<li>Restraints may be assigned to any pair of atoms, however through specifying 2D structure (in
-dot/bracket, Vienna notation), base pairing restraints are created (using this <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/Script%20to%20Make%20Restraints%20Files.sh>script</a> between pairs of atoms that form the link between the triangular pseudo-bases. This makes use of a <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/Brackets2Restraints.md><em>Perl</em> script</a> kindly provided by my supervisor <a href=https://github.com/darogan>Dr R.S. Hamilton</a></li>
-<li>Run SimRNA, a coarse grained 3D structural prediction program, for the <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/New%20SimRNA%20script%20for%20Candidate%20snoRNAs.sh>Candidate snoRNAs</a> and the <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/New%20SimRNA%20script%20for%20Spliceosomal%20snRNAs.sh>Spliceosomal snRNAs</a></li>
-<li>Visualise the 3D structures in <a href=https://pymol.org/2/>PyMol</a>.</li>
-<li>Align candidate snoRNA structures to their respective U4 spliceosomal snRNA using <a href=https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/PyMol%20Align%20U4%20x%20snoRNAs.sh>this script</a> in PyMol.</li>
+<li>Candidate snoRNA secondary structures predicted using <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/RNAfold%20Candidate%20snoRNAs.sh">RNAfold</a></li>
+<li>Spliceosomal snRNAs' secondary structures predicted using <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/RNAfold%20Spliceosomal%20snRNAs.sh">RNAfold</a></li>
+<li>Restraints may be assigned to any pair of atoms, however through specifying 2D structure (in dot/bracket, Vienna notation), base pairing restraints are created (using this <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/Script%20to%20Make%20Restraints%20Files.sh">script</a> between pairs of atoms that form the link between the triangular pseudo-bases. This makes use of a <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/Brackets2Restraints.md"><em>Perl</em> script</a> kindly provided by my supervisor <a href="https://github.com/darogan">Dr R.S. Hamilton</a></li>
+<li>Run SimRNA, a coarse grained 3D structural prediction program, for the <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/New%20SimRNA%20script%20for%20Candidate%20snoRNAs.sh">Candidate snoRNAs</a> and the <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/SimRNA%20Command%20Line/New%20SimRNA%20script%20for%20Spliceosomal%20snRNAs.sh">Spliceosomal snRNAs</a></li>
+<li>Visualise the 3D structures in <a href="https://pymol.org/2/">PyMol</a>.</li>
+<li>Align candidate snoRNA structures to their respective U4 spliceosomal snRNA using <a href="https://github.com/AFS-Part-II-Projects/Ujjawal_Kumar/blob/main/3D%20Structure%20Prediction/PyMol%20Align%20U4%20x%20snoRNAs.sh">this script</a> in PyMol.</li>
 </ul>
 </li>
-<li><h4 id=presentation-and-project-report>Presentation and Project Report</h4>
+<li>
+<h4 id="presentation-and-project-report">Presentation and Project Report</h4>
 <ul>
-<li><a href="nst2presentation.html" title="Project Presentation">Project Presentation</a></li>
-<li><a href="nst2projectthesis.html" title="Project Thesis">Project Thesis</a></li>
+<li><a title="Project Presentation" href="nst2presentation.html">Project Presentation</a></li>
+<li><a title="Project Thesis" href="nst2projectthesis.html">Project Thesis</a></li>
 </ul>
 </li>
 </ol>
