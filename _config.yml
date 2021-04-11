@@ -1,3 +1,6 @@
 theme: jekyll-theme-minima
 sass:
   sass_dir: _sass
+
+- name: generate-sitemap
+  uses: cicirello/generate-sitemap@v1.6.2
