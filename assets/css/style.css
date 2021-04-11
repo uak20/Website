@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p.ex1 {
+  border: 1px solid red; 
+  padding: 35px;
+}
+
+p.ex2 {
+  border: 0px solid red; 
+  margin: 10px;
+}
+	
+h2.ex1 {
+  border: 1px solid red; 
+  padding: 35px;
+}
+
+h2.ex2 {
+  border: 0px solid red; 
+  margin: 10px;
+}
+
+h3.ex1 {
+  border: 1px solid red; 
+  padding: 35px;
+}
+
+h3.ex2 {
+  border: 0px solid red; 
+  margin: 10px;
+}
+
+h4.ex1 {
+  border: 1px solid red; 
+  padding: 35px;
+}
+
+h4.ex2 {
+  border: 0px solid red; 
+  margin: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #9CDBD9;
+  color: black;
+}
