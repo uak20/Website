@@ -9,36 +9,14 @@
 
 <body>
 
- <!--Navigation bar-->
-    <!iframe src="navbar.html" frameborder="0"></iframe> 
-<!--end of Navigation bar-->
-	
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="education.html">Education</a>
-  <a class=active href="research.html">Research Experience</a>
-  <div class="dropdown">
-    <button class="dropbtn">Part II Genetics 
-    <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="/Research/NST2GN/nst2gn.html">Part II Research Project</a>
-      <a href="/Research/NST2GN/nst2literaturereview.html">Literature Review</a>
-      <a href="/Research/NST2GN/nst2presentation.html">Project Presentation</a>
-      <a href="/Research/NST2GN/nst2projectthesis.html">Project Thesis</a>	
-    </div>
-  </div> 	
-  <div class="dropdown">
-    <button class="dropbtn">Summer Project 2019
-    <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="/Research/FKT/fkt2019.html">Project Abstract</a>
-      <a href="/Research/FKT/fktpresentation.html">Project Presentation</a>
-      <a href="/Research/FKT/fktreport.html">Project Thesis</a>	
-    </div>
-  </div> 
-</div>
+<div id="nav-placeholder"></div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
 	
 </body>
 	

@@ -9,32 +9,14 @@
 
 <body>
 
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a class="active" href="education.html">Education</a>
-  <a href="research.html">Research Experience</a>
-  <div class="dropdown">
-    <button class="dropbtn">Part II Genetics 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="nst2gn.html">Part II Research Project</a>
-      <a href="nst2literaturereview.html">Literature Review</a>
-      <a href="nst2presentation.html">Project Presentation</a>
-	  <a href="nst2projectthesis.html">Project Thesis</a>	
-    </div>
-  </div> 	
-  <div class="dropdown">
-    <button class="dropbtn">Summer Project 2019
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="fkt2019.html">Project Abstract</a>
-      <a href="fktpresentation.html">Project Presentation</a>
-	  <a href="fktreport.html">Project Thesis</a>	
-    </div>
-  </div> 
-</div>
+<div id="nav-placeholder"></div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
 
 <h4 class="ex2"> <u>Pre-University Education — St Michael's School, Llanelli, UK, SA14 9TU: February 2006 – August 2018</u></h4>
 <hr/>
@@ -95,8 +77,8 @@
       <li>Human Genetics, Genomics and Systems Biology</li>
       <li>Developmental Genetics</li>
       <li> Evolutionary Genetics &amp; Adaptation</li>
-      <li><a href="nst2literaturereview.html">Literature Review</a> - The Structure-Function relationships between disease-related snoRNAs, the U4 spliceosome and Imprinted Disorders</li>
-      <li><a href="nst2gn.html">Research Project</a> - Investigation of snoRNA clusters in the imprinted <em>Dlk1-Dio3</em> and <em>Snrpn</em> regions and their role in splicing</li>
+      <li><a href="/Research/NST2GN/Literature Review.html">Literature Review</a> - The Structure-Function relationships between disease-related snoRNAs, the U4 spliceosome and Imprinted Disorders</li>
+      <li><a href="/Research/NST2GN/Part II Research Project.html">Research Project</a> - Investigation of snoRNA clusters in the imprinted <em>Dlk1-Dio3</em> and <em>Snrpn</em> regions and their role in splicing</li>
       <li>Preparing for Patients D</li>
     </ul>
   </li>

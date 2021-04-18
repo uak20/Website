@@ -3,30 +3,50 @@
 
 <head>
   	<title>NST2GN Thesis</title>
-	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+	
+	<style>
+	
+	.container {
+    position: absolute;
+    overflow: hidden;
+    width: 99%;
+    padding-top: 141.43%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsiveiframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+		
+	</style>
 </head>
-
-<body>
-
+	
 <div class="topnav">
   <a href="index.html">Home</a>
   <a href="education.html">Education</a>
   <a href="research.html">Research Experience</a>
   <div class="dropdown">
-    <button class="dropbtn">Part II Genetics 
-      <i class="fa fa-caret-down"></i>
+    <button href="research.html" class="dropbtn">Part II Genetics 
+    <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="nst2gn.html">Part II Research Project</a>
+      <a href="Research/NST2GN/Part II Research Project.html">Part II Research Project</a>
       <a href="nst2literaturereview.html">Literature Review</a>
       <a href="nst2presentation.html">Project Presentation</a>
-	  <a class="active" href="nst2projectthesis.html">Project Thesis</a>	
+	  <a href="nst2projectthesis.html">Project Thesis</a>	
     </div>
   </div> 	
   <div class="dropdown">
     <button class="dropbtn">Summer Project 2019
-      <i class="fa fa-caret-down"></i>
+    <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="fkt2019.html">Project Abstract</a>
@@ -35,10 +55,15 @@
     </div>
   </div> 
 </div>
+
+		
+<body>
 	
+<div class="container">
+<iframe class="responsiveiframe" src="https://drive.google.com/file/d/1XRs2KzBJKgwGWaRKdNmWjeVHX82gsThZ/preview"></iframe>
+</div>
+	
+<!iframe src="https://drive.google.com/file/d/1xgeOT5hVkWCFuixkFTk5N7mneCgPD_FN/preview" width="1920" height="870"</iframe>
+
 </body>
 </html>
-
-<iframe src="https://drive.google.com/file/d/1XRs2KzBJKgwGWaRKdNmWjeVHX82gsThZ/preview" width="1920" height="870"></iframe>
-
-<!iframe src="https://drive.google.com/file/d/1xgeOT5hVkWCFuixkFTk5N7mneCgPD_FN/preview" width="1920" height="870"</iframe>
